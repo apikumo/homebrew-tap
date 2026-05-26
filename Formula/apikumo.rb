@@ -1,8 +1,8 @@
 class Apikumo < Formula
   desc "Sync your OpenAPI spec with apikumo from the command line"
   homepage "https://apikumo.com"
-  url "https://github.com/apikumo/releases/releases/download/v0.1.0/apikumo-0.1.0.tgz"
-  sha256 "81df9fb6a8769c5be4a8e420999903c9be44f5984028c4df4744293435812fa0"
+  url "https://github.com/apikumo/releases/releases/download/v0.1.1/apikumo-0.1.1.tgz"
+  sha256 "f3bf2c32acea71c0d31655dd1beea7d69f22258728891dc61c581ec124f1aa15"
   license "MIT"
 
   depends_on "node"
@@ -13,6 +13,6 @@ class Apikumo < Formula
   end
 
   test do
-    assert_match "0.1.0", shell_output("#{bin}/apikumo --version")
+    assert_match "0.1.1", shell_output("#{bin}/apikumo --version")
   end
 end
