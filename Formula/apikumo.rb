@@ -1,28 +1,28 @@
 class Apikumo < Formula
   desc "Sync your OpenAPI spec with apikumo from the command line"
   homepage "https://apikumo.com"
-  version "0.1.14"
+  version "0.1.15"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/apikumo/releases/releases/download/v0.1.14/apikumo-darwin-arm64"
-      sha256 "8d7fb9592be85facfa6d0c46349d3cf46d6730637987b5d5f6675845d408154f"
+      url "https://github.com/apikumo/releases/releases/download/v0.1.15/apikumo-darwin-arm64"
+      sha256 "b01e28f79e67ba560c8dd0c77db9265a11525c735fb8af4412e22a688e5de09c"
     end
     on_intel do
-      url "https://github.com/apikumo/releases/releases/download/v0.1.14/apikumo-darwin-x64"
-      sha256 "3e3e2a40a476471f0dee5afcacc4fbe98908b33c4ca84f18096019531499810b"
+      url "https://github.com/apikumo/releases/releases/download/v0.1.15/apikumo-darwin-x64"
+      sha256 "acd76c2286a1949fb70791be827c40203337f2b670558270d2be69629619891a"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/apikumo/releases/releases/download/v0.1.14/apikumo-linux-x64"
-      sha256 "1bc4dd9ad341740f87c79e61db50fa0b36fbe6e7d32525cc0c7db855947d4013"
+      url "https://github.com/apikumo/releases/releases/download/v0.1.15/apikumo-linux-x64"
+      sha256 "9ccda38d56e9daaf424a454fe24845c6ad0816c01297e1f2ee17c8d498c8ad61"
     end
     on_arm do
-      url "https://github.com/apikumo/releases/releases/download/v0.1.14/apikumo-linux-arm64"
-      sha256 "a7914c351a1c785bf68368151fc248e8f16cce87f3f63936739b0205b44942f1"
+      url "https://github.com/apikumo/releases/releases/download/v0.1.15/apikumo-linux-arm64"
+      sha256 "4ebc465751b66ab1814a86a9847aa2dc471134ad0101f562fbb8450ab825ce77"
     end
   end
 
@@ -32,6 +32,6 @@ class Apikumo < Formula
   end
 
   test do
-    assert_match "0.1.14", shell_output("#{bin}/apikumo --version")
+    assert_match "0.1.15", shell_output("#{bin}/apikumo --version")
   end
 end
